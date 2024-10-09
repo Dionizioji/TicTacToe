@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA VELHA</title>
+</head>
+
+<body>
+
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="tictactoe.css" rel="stylesheet">
+        <script src="tictactoe.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main id="main" class="in_game" data-theme="dark">
+
+            <h1>Tic Tac Toe by Dionízio</h1>
+
+            <div id="players">
+                <label for="p_one">Player One:</label>
+                <input name="p_one" type="text" id="player_one" class="players_name"><br>
+
+                <label for="p_two">Player Two:</label>
+                <input name="p_two" type="text" id="player_two" class="players_name"><br>
+                <button id="letsPlay">Let's play!</button>
+            </div>
+
+            <div id="game_board">
+
+                <div id="line_one" class="lines">
+                    <button id="button_one" class="buttons"></button>
+                    <button id="button_two" class="buttons"></button>
+                    <button id="button_three" class="buttons"></button>
+                </div>
+
+                <div id="line_two" class="lines">
+                    <button id="button_four" class="buttons"></button>
+                    <button id="button_five" class="buttons"></button>
+                    <button id="button_six" class="buttons"></button>
+                </div>
+
+                <div id="line_three" class="lines">
+                    <button id="button_seven" class="buttons"></button>
+                    <button id="button_eight" class="buttons"></button>
+                    <button id="button_nine" class="buttons"></button>
+                </div>
+            </div>
+
+            <div id="winner_space">
+
+                <input id="player_info" placeholder="YOUR TURN PLAYER: " name="player_turn" type="text" disabled><br>
+                <button id="dark_light_button">Dark/Light mode</button>
+
+            </div>
+
+        </main>
+    </body>
+
+</html>

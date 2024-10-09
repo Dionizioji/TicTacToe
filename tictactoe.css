@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+:root{
+    --pri-color: #a300a8;
+    --sec-color: #031030;
+    --ter-color: #aed6dc;
+    --qua-color: #f3ecf2;
+}
+
+main{
+    display: block;
+    background-color: var(--sec-color);
+    color: var(--pri-color);
+    margin:.5rem;
+    padding:.5rem;
+    width:auto;
+    height:auto;    
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: auto;
+    margin: 5rem;
+    color: #fff;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--qua-color), 0 0 20px var(--qua-color), 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px var(--qua-color), 0 0 30px var(--pri-color), 0 0 40px var(--pri-color), 0 0 50px var(--pri-color), 0 0 60px var(--pri-color), 0 0 70px var(--pri-color), 0 0 80px var(--pri-color);
+    }
+}
+
+#players{
+    font-size: 1rem;
+    justify-items: auto;
+    margin: 5rem;
+}
+
+#line_one, #line_two, #line_three{
+    margin: .2rem;
+}
+
+.buttons {
+    background-color: var(--pri-color);
+    margin: .2rem;
+    width: 12vw;
+    height: 12vw;
+    border-radius: .8rem;
+    outline: none; /* Remove o efeito de foco */
+    border: none;   /* Remove a borda padrão */
+    box-shadow: 0 0 5px var(--pri-color);
+    color: var(--qua-color);
+    font-size: 3rem; /* Tamanho do texto */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo no botão */
+    position: relative; /* Mantém o botão no lugar */
+}
+
+.buttons:active {
+    transform: scale(0.98); /* Suaviza o clique, se necessário */
+}
+
+.buttons:focus {
+    outline: none; /* Remove o contorno de foco */
+}
+
+.lines {
+    display: flex;
+    justify-content: center;
+}
+
+#player_info{
+    width: 30vw; 
+    height: auto;
+}
+
+#winner_space{
+    margin: 4rem;
+}
+
+#dark_light_button, #letsPlay{
+    padding: .5rem;
+    background-color: var(--sec-color);
+    color: var(--pri-color);
+    font-size: 1rem;
+    margin: 1rem;
+    outline: none;
+    border-color: var(--pri-color);
+    box-shadow: 0 0 10px var(--pri-color);
+}
